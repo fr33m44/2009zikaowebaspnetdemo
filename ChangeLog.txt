@@ -1,0 +1,9 @@
+﻿
+2009.10.13  (Solved)    重新编写zk.css,在IE6中不再有新闻区在sidebar之下的情况。
+            (UnSolved)  Default_Admin.aspx因为select where news_author_id=@account_id，account_id没有赋值，所以gridview没有内容。
+                        所以需要通过Session来验证Default_Adimin.aspx和NewsDetail_Admin.aspx
+            (UnSolved)  后台编辑器准备改用fckeditor.net
+2009.10.12  (Solved)    NewsDetail_Admin中InsertCommand中news_author_id的取值->   <asp:SessionParameter SessionField="account_id"......
+            (Solved)    动态设置newsdetail和newsdetail_admin的页面title
+            (Unsolved)  把数据库中new_title绑定到<title></title>
+2009.10.9   (Solved)    开始编写

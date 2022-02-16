@@ -1,0 +1,9 @@
+﻿ <SelectParameters>
+            <asp:QueryStringParameter DefaultValue="0" Name="id" QueryStringField="id" 
+                Type="Int32" />
+</SelectParameters>
+        
+   ------------------
+   
+   
+   

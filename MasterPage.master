@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+
+<head runat="server">   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/zk.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="container">
+        <div id="header"><img src="img/Header.png" /></div>
+        <div id="content">
+        <div id="left">
+            <ol>
+                <li><img src="img/L_department.png" /></li>
+                <li><img src="img/L_fgzd.png" /></li>
+                <li><img src="img/L_loaddown.png" /></li>
+                <li><img src="img/L_range.png" /></li>
+                <li><img src="img/L_resumme.png" /></li>
+            </ol>
+            <img src="img/link_bg.png" style="background-repeat:repeat-y;height:20px;width:200px;" />
+            <ol>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+                <li><img style="padding-left:15px;" src="img/webSign.jpg" /><a href="#" class="sidebar_font">重庆自考网</a></li>
+            </ol>
+        </div>
+        <div id="right">
+            <div id="nav">
+                <ol>
+                    <li><a href="Default.aspx">首页</a></li>
+                    <li><a href="#">部门简介</a></li>
+                    <li><a href="#">开考专业</a></li>
+                    <li><a href="#">证书考试</a></li>
+                    <li><a href="#">联合助学</a></li>
+                    <li><a href="#">法规制度</a></li>
+                    <li><a href="#">下载专区</a></li>
+                </ol>
+            </div>
+            <div id="news">
+                <asp:ContentPlaceHolder ID="NewsPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+     </div>
+    <div id="footer" style="text-align:center;color:Gray">Copyright ©2009 | 重庆理工大学高等教育自学考试办公室 | All Rights Reserved<br />
+            联系电话：(023)68666141 68667291 | 联系邮箱zkb@cqut.edu.cn   | <a href="Login.aspx">登录</a>|<a href="LoginOut.aspx">注销</a>|<a href="Default_Admin.aspx">管理首页</a>
+    </div>
+</div>
+    </form>
+</body>
+</html>

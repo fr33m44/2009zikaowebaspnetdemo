@@ -1,0 +1,19 @@
+﻿后台新闻管理用户的权限分为admin和非admin，通过account表的is_admin字段来判断。是1，不是0。
+admin可以管理所有人所有新闻。
+非admin只能管理自己的新闻。
+----------------------------------------
+
+
+
+Default_Admin.aspx 新闻列表(只能操作自己录入的文章)：
+select news_title,news_posttime from news,account where news.news_author_id=account.id
+
+
+NewsDetail查询：
+select news.news_title,news.news_content,account.username,news.news_posttime
+from news,account
+where news.news_author_id=account.id
+
+添加编辑，删除，添加新闻功能
+直接利用session判断权限，安全，实在。
+
